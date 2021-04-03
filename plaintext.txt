@@ -1,0 +1,21 @@
+https://github.com/hyperledger/indy-sdk#ubuntu-based-distributions-ubuntu-1604-and-1804
+
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys CE7709D068DB5E88
+sudo add-apt-repository "deb https://repo.sovrin.org/sdk/deb bionic master"
+sudo apt-get update
+sudo apt-get install -y libindy
+
+
+
+sudo pip3 install python3-indy
+
+
+
+
+apt-get install software-properties-common  // apt-key
+
+
+
+docker run -it --rm --name ds -e GRANT_SUDO=yes --user root -p 8888:8888 jupyter/datascience-notebook
+
+
