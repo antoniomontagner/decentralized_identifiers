@@ -3,8 +3,6 @@ FROM jupyter/scipy-notebook:latest
 
 USER root
 
-
-
 RUN pip install --no-cache-dir notebook==5.*
 
 
