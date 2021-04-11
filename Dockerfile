@@ -4,12 +4,6 @@ FROM jupyter/scipy-notebook:latest
 USER root
 
 
-RUN adduser --disabled-password \
-    --gecos "Default user" \
-    --uid ${NB_UID} \
-    ${NB_USER}
-
-
 
 RUN pip install --no-cache-dir notebook==5.*
 
