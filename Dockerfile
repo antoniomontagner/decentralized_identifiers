@@ -13,7 +13,7 @@ RUN sudo apt-get -y install gnupg
 
 RUN sudo apt-get -y install software-properties-common
 
-RUN sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys CE7709D068DB5E88
+RUN sudo APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=1 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys CE7709D068DB5E88
 RUN sudo add-apt-repository "deb https://repo.sovrin.org/sdk/deb bionic master"
 RUN sudo apt-get update
 RUN sudo apt-get install -y libindy
