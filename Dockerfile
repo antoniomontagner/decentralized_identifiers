@@ -10,7 +10,7 @@ RUN pip install --no-cache-dir notebook==5.*
 
 RUN sudo apt-get -y update
 RUN sudo apt-get -y upgrade
-RUN sudo apt-get -y install gnupg2 && y
+RUN sudo apt-get -y install gnupg2
 RUN sudo apt-get -y install gnupg
 
 RUN sudo apt-get -y install software-properties-common
