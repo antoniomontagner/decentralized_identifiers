@@ -1,5 +1,5 @@
 # Note.
-FROM jupyter/scipy-notebook:latest
+FROM ubuntu:18.04
 
 USER root
 
