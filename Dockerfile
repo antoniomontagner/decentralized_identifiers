@@ -3,9 +3,6 @@ FROM ubuntu:18.04
 
 USER root
 
-RUN pip install --no-cache-dir notebook==5.*
-
-
 RUN sudo apt-get -y update
 RUN sudo apt-get -y upgrade
 RUN sudo apt-get -y install gnupg2
@@ -20,6 +17,11 @@ RUN sudo apt-get install -y libindy
 
 
 RUN sudo apt-get -y install python3-pip
+
+RUN pip install --no-cache-dir notebook==5.*
+RUN pip install jupyterlab
+RUN pip install notebook
+RUN pip install voila
 
 RUN sudo pip3 install python3-indy
 RUN sudo pip install python3-indy
