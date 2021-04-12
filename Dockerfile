@@ -27,4 +27,7 @@ RUN sudo pip3 install python3-indy
 RUN sudo pip install python3-indy
 
     
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7e5bbb23be5400692feb6fcc836a64b44b022a62
